@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+		@font-face
+		{
+			font-family:Aqifont;
+			src:url("AlexBrush-Regular.ttf");
+		}
+		h1
+		{
+			font-family:Aqifont;
+		}
+
+</style>
+<script src="cordova.js"></script>
+<script>
+	function pageLoaded()
+	{
+		document.addEventListener("deviceready",siapsedia,false);
+	}
+
+	function siapsedia()
+	{
+		navigator.notification.alert("Register",
+								mulaKerja,
+								"crefit : Bhaihaqi",
+								"Jom uji kaji :D");
+	}
+
+	function mulaKerja()
+	{
+		document.getElementById("msg").innerHTML = "Kerja boleh dimulakan";
+	}
+</script>
+</head>
+<body onload="pageLoaded()">
+	<center>
+		<h1>Register</h1>
+		<img src="Sekolah.jpg" height="150" />
+		<h1>Welcome to PhoneGap. My Name is Bhaihaqi</h1>
+		This is our first mobile app using PhoneGap
+		<p id="msg"></p>
+		<a href="camera.html">Camera</a></li>
+
+	</center>
+</body>
+</html>
+
+
+
+
+
